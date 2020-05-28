@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: sudo apt -y install tree && tree -d /
+      - run: sudo apt -y install tree && tree -d /home/runner/work

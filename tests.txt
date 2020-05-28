@@ -1,2 +1,3 @@
 RUN 1 - Tree is not installed
-RUN 2
+RUN 2 - Took too long to print the entire file system
+RUN 3
