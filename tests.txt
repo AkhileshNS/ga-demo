@@ -1,1 +1,2 @@
-RUN 1
+RUN 1 - Tree is not installed
+RUN 2
