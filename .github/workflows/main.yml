@@ -11,3 +11,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: sudo apt -y install tree && tree -d $GITHUB_WORKSPACE
+      - run: cd $GITHUB_WORKSPACE && ls -la
