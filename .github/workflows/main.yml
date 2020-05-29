@@ -16,7 +16,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: npm config get prefix
-      - run: C:\npm\prefix;ls
+      - run: cd C:\npm\prefix;ls
   npm-path-mac:
     runs-on: macos-latest
     steps:
