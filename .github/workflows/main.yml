@@ -17,7 +17,7 @@ jobs:
     steps:
       - run: npm config get prefix
       - run: cd C:\npm\prefix;ls
-      - run: C:\npm\prefix\npm.cmd --version
+      - run: C:\npm\prefix\yarn.cmd --version
   npm-path-mac:
     runs-on: macos-latest
     steps:
