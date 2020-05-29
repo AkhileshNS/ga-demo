@@ -16,11 +16,14 @@ jobs:
     runs-on: windows-latest
     steps:
       - run: npm config get prefix
+      - run: C:\npm\prefix;ls
   npm-path-mac:
     runs-on: macos-latest
     steps:
       - run: npm config get prefix
+      - run: cd /usr/local && ls -la
   npm-path-lin:
     runs-on: ubuntu-latest
     steps:
       - run: npm config get prefix
+      - run: cd /usr/local && ls -la
