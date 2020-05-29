@@ -17,13 +17,16 @@ jobs:
     steps:
       - run: npm config get prefix
       - run: cd C:\npm\prefix;ls
+      - run: C:\npm\prefix\npm.cmd --version
   npm-path-mac:
     runs-on: macos-latest
     steps:
       - run: npm config get prefix
       - run: cd /usr/local/bin && ls -la
+      - run: /usr/local/bin/npm --version
   npm-path-lin:
     runs-on: ubuntu-latest
     steps:
       - run: npm config get prefix
       - run: cd /usr/local/bin && ls -la
+      - run: /usr/local/bin/npm --version
