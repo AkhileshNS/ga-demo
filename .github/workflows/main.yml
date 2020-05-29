@@ -21,9 +21,9 @@ jobs:
     runs-on: macos-latest
     steps:
       - run: npm config get prefix
-      - run: cd /usr/local && ls -la
+      - run: cd /usr/local/bin && ls -la
   npm-path-lin:
     runs-on: ubuntu-latest
     steps:
       - run: npm config get prefix
-      - run: cd /usr/local && ls -la
+      - run: cd /usr/local/bin && ls -la
