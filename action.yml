@@ -1,0 +1,13 @@
+name: ga-docker-testing-action
+description: 'An action to perform tests on GitHub Actions'
+branding:
+  icon: 'chevrons-right'
+  color: 'gray-dark'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  build-only:
+    description: 'Checking if this shows up in env'
+    required: false
+    default: "false"
