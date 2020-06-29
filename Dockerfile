@@ -12,6 +12,6 @@ RUN npm i -g heroku@${HEROKU_CLI_VERSION}
 
 RUN apk update && apk --no-cache add git
 
-ADD entrypoint.js /entrypoint.js
+COPY entrypoint.js .
 
 CMD [ "node", "entrypoint.js" ]
