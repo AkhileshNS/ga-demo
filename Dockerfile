@@ -14,4 +14,4 @@ RUN apk update && apk --no-cache add git
 
 COPY entrypoint.js /
 
-CMD [ "node", "/entrypoint.js" ]
+CMD [ "ls" ]
