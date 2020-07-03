@@ -7,11 +7,12 @@ LABEL "com.github.actions.color"="gray-dark"
 
 LABEL "repository"="http://github.com/akhileshns/ga-demo"	
 
-ENV HEROKU_CLI_VERSION '7.42.1'
-RUN npm i -g heroku@${HEROKU_CLI_VERSION}
+ENV HEROKU_VERSION="7.42.1"
+RUN yarn global add heroku@$HEROKU_VERSION
 
-RUN apk update && apk --no-cache add git
+RUN apk update \
+  && apk --no-cache add git
 
-COPY entrypoint.js /
+COPY main .
 
-CMD [ "ls" ]
+ENTRYPOINT [ "./main" ]

@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: akhileshns/ga-demo@master
+        env:
+          HEROKU_CHECK: "hello-world"
   build:
     runs-on: ubuntu-latest
     steps:
